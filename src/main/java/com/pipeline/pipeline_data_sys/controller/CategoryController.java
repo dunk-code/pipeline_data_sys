@@ -40,13 +40,15 @@ public class CategoryController {
         return categoryService.listAll();
     }
 
-    @GetMapping("/{identifier}/search")
+    @GetMapping("/{title}/search")
     @ApiOperation("类别搜索接口")
-    public List<String> search(@PathVariable String identifier) {
-        return categoryService.searchByIdentifier(identifier);
+    public List<String> search(@PathVariable String title) {
+        return categoryService.searchByIdentifier(title);
     }
 
+
     @PostMapping("/upload")
+    @ApiOperation("上传类型表接口")
     public RespVo upload(@RequestParam(name = "image") MultipartFile file) {
         if (!FileUtil.isCorrectForExcel(file.getOriginalFilename())) {
             return RespVo.error(ERROR_FILE_FORMAT, getMsg(ERROR_FILE_FORMAT));

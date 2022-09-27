@@ -65,9 +65,9 @@ public class CategoryServiceImpl extends ServiceImpl<CategoryMapper, Category> i
     }
 
     @Override
-    public List<String> searchByIdentifier(String identifier) {
+    public List<String> searchByIdentifier(String title) {
         List<String> ans = new ArrayList<>();
-        if (identifier == null || identifier.equals("")) return ans;
+        if (title == null || title.equals("")) return ans;
         List<Category> categories = this.list();
         Map<Integer, Integer> id2ParentId = new HashMap<>();
         Integer id = 0;
@@ -76,7 +76,7 @@ public class CategoryServiceImpl extends ServiceImpl<CategoryMapper, Category> i
             if (category.getParentId() != null) {
                 id2ParentId.put(category.getId(), category.getParentId());
             }
-            if (identifier.equals(category.getIdentifier())) {
+            if (id == 0 && category.getTitle() != null && category.getTitle().contains(title)) {
                 id = category.getId();
             }
         }

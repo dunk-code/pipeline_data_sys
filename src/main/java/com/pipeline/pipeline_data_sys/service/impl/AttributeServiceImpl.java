@@ -69,6 +69,14 @@ public class AttributeServiceImpl extends ServiceImpl<AttributeMapper, Attribute
         return sortOut(attributes, pages, total);
     }
 
+    @Override
+    public AttributeVo listByCategoryId(Integer categoryId, String order) {
+        QueryWrapper<Attribute> wrapper = new QueryWrapper<>();
+        wrapper.orderByAsc(order).eq("category_id", categoryId);
+        List<Attribute> attributes = this.list(wrapper);
+        return new AttributeVo(attributes, "", "", null, null);
+    }
+
     private List<AttributeVo> sortOut(List<Attribute> attributes, long pages, long total) {
         List<Integer> categoryIdList = new ArrayList<>();
         Map<Integer, AttributeVo> categoryId2AttributeVoMap = new HashMap<>();

@@ -61,12 +61,21 @@ public class AttributeController {
     @GetMapping("/{categoryId}")
     @ApiOperation("属性表分页接口")
     @ResponseBody
-    public AttributeVo listByCategoryId(
+    public AttributeVo listByCategoryIdPaged(
             @PathVariable() Integer categoryId,
             @RequestParam(defaultValue = "1") Integer pageNum,
             @RequestParam(defaultValue = "20") Integer pageSize,
             @RequestParam(defaultValue = "id") String order) {
         return attributeService.listByCategoryId(categoryId, pageNum, pageSize, order);
+    }
+
+    @GetMapping("/{categoryId}/list")
+    @ApiOperation("属性表全量接口")
+    @ResponseBody
+    public AttributeVo listByCategoryId(
+            @PathVariable() Integer categoryId,
+            @RequestParam(defaultValue = "id") String order) {
+        return attributeService.listByCategoryId(categoryId, order);
     }
 
     @GetMapping("/cols")
@@ -97,6 +106,7 @@ public class AttributeController {
     }
 
     @PostMapping("/upload")
+    @ApiOperation("上传属性表接口")
     public RespVo upload(@RequestParam(name = "image") MultipartFile file) {
         if (!FileUtil.isCorrectForExcel(file.getOriginalFilename())) {
             return RespVo.error(ERROR_FILE_FORMAT, getMsg(ERROR_FILE_FORMAT));

@@ -18,5 +18,5 @@ public interface CategoryService extends IService<Category> {
 
     List<CategoryVo> listAll();
 
-    List<String> searchByIdentifier(String identifier);
+    List<String> searchByIdentifier(String title);
 }
