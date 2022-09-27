@@ -879,3 +879,316 @@ java.sql.SQLException: Access denied for user 'root'@'localhost' (using password
 2022-09-26 23:20:32.744  INFO 9636 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@23a78c77, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4119346d, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@61d09475, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@d0fabc8, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@12d44a2a, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1a66be41, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7f70e244, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@fd14789, org.springframework.test.context.event.EventPublishingTestExecutionListener@3f64d943, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@105ffc58, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@68454ed5, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@6d2db15b, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@749ad37c, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@1b485c8b, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@59b98ad1]
 2022-09-26 23:20:32.835  INFO 9636 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2022-09-26 23:20:32.847  INFO 9636 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-09-27 10:02:08.471  INFO 6315 --- [main] c.p.p.PipelineDataSysApplication         : Starting PipelineDataSysApplication using Java 1.8.0_331 on NPHWXP69YM with PID 6315 (/Users/songyao.zhang/go/pipeline_data_sys/target/classes started by songyao.zhang in /Users/songyao.zhang/go/pipeline_data_sys)
+2022-09-27 10:02:08.473  INFO 6315 --- [main] c.p.p.PipelineDataSysApplication         : The following profiles are active: dev
+2022-09-27 10:02:11.205  INFO 6315 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-09-27 10:02:11.307  INFO 6315 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-09-27 10:02:11.308  INFO 6315 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-09-27 10:02:11.484  INFO 6315 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-09-27 10:02:11.485  INFO 6315 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2899 ms
+2022-09-27 10:02:13.898  INFO 6315 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-09-27 10:02:13.950  INFO 6315 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/dist/index.html]
+2022-09-27 10:02:14.328  INFO 6315 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-09-27 10:02:14.378  INFO 6315 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-09-27 10:02:14.406  INFO 6315 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2022-09-27 10:02:14.444  INFO 6315 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-09-27 10:02:14.695  INFO 6315 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: uploadUsingPOST_1
+2022-09-27 10:02:14.700  INFO 6315 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: indexUsingGET_1
+2022-09-27 10:02:14.747  INFO 6315 --- [main] c.p.p.PipelineDataSysApplication         : Started PipelineDataSysApplication in 7.124 seconds (JVM running for 7.807)
+2022-09-27 10:02:23.343  INFO 6315 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-27 10:02:23.345  INFO 6315 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-09-27 10:02:23.351  INFO 6315 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2022-09-27 11:55:25.591  INFO 60879 --- [main] c.p.p.PipelineDataSysApplication         : Starting PipelineDataSysApplication using Java 1.8.0_331 on NPHWXP69YM with PID 60879 (/Users/songyao.zhang/go/pipeline_data_sys/target/classes started by songyao.zhang in /Users/songyao.zhang/go/pipeline_data_sys)
+2022-09-27 11:55:25.594  INFO 60879 --- [main] c.p.p.PipelineDataSysApplication         : The following profiles are active: dev
+2022-09-27 11:55:28.201  INFO 60879 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-09-27 11:55:28.309  INFO 60879 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-09-27 11:55:28.310  INFO 60879 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-09-27 11:55:28.477  INFO 60879 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-09-27 11:55:28.477  INFO 60879 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2769 ms
+2022-09-27 11:55:30.843  INFO 60879 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-09-27 11:55:30.885  INFO 60879 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/dist/index.html]
+2022-09-27 11:55:31.256  INFO 60879 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-09-27 11:55:31.271  INFO 60879 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-09-27 11:55:31.296  INFO 60879 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2022-09-27 11:55:31.341  INFO 60879 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-09-27 11:55:31.653  INFO 60879 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: uploadUsingPOST_1
+2022-09-27 11:55:31.664  INFO 60879 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: indexUsingGET_1
+2022-09-27 11:55:31.694  INFO 60879 --- [main] c.p.p.PipelineDataSysApplication         : Started PipelineDataSysApplication in 6.999 seconds (JVM running for 7.611)
+2022-09-27 11:55:44.123  INFO 60879 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-27 11:55:44.125  INFO 60879 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-09-27 11:55:44.131  INFO 60879 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2022-09-27 11:55:54.758  INFO 60879 --- [http-nio-8080-exec-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-09-27 11:55:56.941 ERROR 60879 --- [http-nio-8080-exec-9] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Exception during pool initialization.
+
+java.sql.SQLException: Access denied for user 'root'@'61.144.201.231' (using password: NO)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:828)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:448)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:241)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:159)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:117)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:80)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:80)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:67)
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:337)
+	at com.baomidou.mybatisplus.core.executor.MybatisSimpleExecutor.prepareStatement(MybatisSimpleExecutor.java:93)
+	at com.baomidou.mybatisplus.core.executor.MybatisSimpleExecutor.doQuery(MybatisSimpleExecutor.java:68)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:325)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at com.baomidou.mybatisplus.core.executor.MybatisCachingExecutor.query(MybatisCachingExecutor.java:165)
+	at com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor.intercept(MybatisPlusInterceptor.java:64)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at com.sun.proxy.$Proxy117.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy83.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:223)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.executeForMany(MybatisMapperMethod.java:173)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:78)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy$PlainMethodInvoker.invoke(MybatisMapperProxy.java:148)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:89)
+	at com.sun.proxy.$Proxy90.selectList(Unknown Source)
+	at com.baomidou.mybatisplus.extension.service.IService.list(IService.java:277)
+	at com.baomidou.mybatisplus.extension.service.IService.list(IService.java:286)
+	at com.pipeline.pipeline_data_sys.service.impl.CategoryServiceImpl.listAll(CategoryServiceImpl.java:30)
+	at com.pipeline.pipeline_data_sys.service.impl.CategoryServiceImpl$$FastClassBySpringCGLIB$$8fb2f7ba.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at com.pipeline.pipeline_data_sys.service.impl.CategoryServiceImpl$$EnhancerBySpringCGLIB$$d4a2e69f.listAll(<generated>)
+	at com.pipeline.pipeline_data_sys.controller.CategoryController.list(CategoryController.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+
+2022-09-27 11:55:56.976 ERROR 60879 --- [http-nio-8080-exec-9] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'61.144.201.231' (using password: NO)
+### The error may exist in com/pipeline/pipeline_data_sys/mapper/CategoryMapper.java (best guess)
+### The error may involve com.pipeline.pipeline_data_sys.mapper.CategoryMapper.selectList
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'61.144.201.231' (using password: NO)] with root cause
+
+java.sql.SQLException: Access denied for user 'root'@'61.144.201.231' (using password: NO)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:828)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:448)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:241)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:159)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:117)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:80)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:80)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:67)
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:337)
+	at com.baomidou.mybatisplus.core.executor.MybatisSimpleExecutor.prepareStatement(MybatisSimpleExecutor.java:93)
+	at com.baomidou.mybatisplus.core.executor.MybatisSimpleExecutor.doQuery(MybatisSimpleExecutor.java:68)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:325)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at com.baomidou.mybatisplus.core.executor.MybatisCachingExecutor.query(MybatisCachingExecutor.java:165)
+	at com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor.intercept(MybatisPlusInterceptor.java:64)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at com.sun.proxy.$Proxy117.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy83.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:223)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.executeForMany(MybatisMapperMethod.java:173)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:78)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy$PlainMethodInvoker.invoke(MybatisMapperProxy.java:148)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:89)
+	at com.sun.proxy.$Proxy90.selectList(Unknown Source)
+	at com.baomidou.mybatisplus.extension.service.IService.list(IService.java:277)
+	at com.baomidou.mybatisplus.extension.service.IService.list(IService.java:286)
+	at com.pipeline.pipeline_data_sys.service.impl.CategoryServiceImpl.listAll(CategoryServiceImpl.java:30)
+	at com.pipeline.pipeline_data_sys.service.impl.CategoryServiceImpl$$FastClassBySpringCGLIB$$8fb2f7ba.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at com.pipeline.pipeline_data_sys.service.impl.CategoryServiceImpl$$EnhancerBySpringCGLIB$$d4a2e69f.listAll(<generated>)
+	at com.pipeline.pipeline_data_sys.controller.CategoryController.list(CategoryController.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+
+2022-09-27 11:56:25.751  INFO 61401 --- [main] c.p.p.PipelineDataSysApplication         : Starting PipelineDataSysApplication using Java 1.8.0_331 on NPHWXP69YM with PID 61401 (/Users/songyao.zhang/go/pipeline_data_sys/target/classes started by songyao.zhang in /Users/songyao.zhang/go/pipeline_data_sys)
+2022-09-27 11:56:25.753  INFO 61401 --- [main] c.p.p.PipelineDataSysApplication         : The following profiles are active: dev
+2022-09-27 11:56:28.432  INFO 61401 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-09-27 11:56:28.532  INFO 61401 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-09-27 11:56:28.533  INFO 61401 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-09-27 11:56:28.654  INFO 61401 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-09-27 11:56:28.654  INFO 61401 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2775 ms
+2022-09-27 11:56:30.873  INFO 61401 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-09-27 11:56:30.927  INFO 61401 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/dist/index.html]
+2022-09-27 11:56:31.276  INFO 61401 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-09-27 11:56:31.283  INFO 61401 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-09-27 11:56:31.306  INFO 61401 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2022-09-27 11:56:31.340  INFO 61401 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-09-27 11:56:31.583  INFO 61401 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: uploadUsingPOST_1
+2022-09-27 11:56:31.595  INFO 61401 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: indexUsingGET_1
+2022-09-27 11:56:31.628  INFO 61401 --- [main] c.p.p.PipelineDataSysApplication         : Started PipelineDataSysApplication in 6.706 seconds (JVM running for 7.291)
+2022-09-27 11:56:37.554  INFO 61401 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-27 11:56:37.556  INFO 61401 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-09-27 11:56:37.562  INFO 61401 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2022-09-27 11:56:37.762  INFO 61401 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-09-27 11:56:39.099  INFO 61401 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-09-27 11:58:14.459  INFO 61401 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-09-27 11:58:14.497  INFO 61401 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-09-27 11:59:05.751  INFO 62796 --- [main] c.p.p.AttributeExcelTests                : Starting AttributeExcelTests using Java 1.8.0_331 on NPHWXP69YM with PID 62796 (started by songyao.zhang in /Users/songyao.zhang/go/pipeline_data_sys)
+2022-09-27 11:59:05.753  INFO 62796 --- [main] c.p.p.AttributeExcelTests                : The following profiles are active: dev
+2022-09-27 11:59:10.901  INFO 62796 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-09-27 11:59:11.178  INFO 62796 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/dist/index.html]
+2022-09-27 11:59:11.697  INFO 62796 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-09-27 11:59:11.715  INFO 62796 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2022-09-27 11:59:11.746  INFO 62796 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-09-27 11:59:11.986  INFO 62796 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: uploadUsingPOST_1
+2022-09-27 11:59:11.993  INFO 62796 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: indexUsingGET_1
+2022-09-27 11:59:12.021  INFO 62796 --- [main] c.p.p.AttributeExcelTests                : Started AttributeExcelTests in 6.915 seconds (JVM running for 8.4)
+2022-09-27 11:59:13.083  INFO 62796 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-09-27 11:59:14.424  INFO 62796 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-09-27 11:59:25.579  INFO 62796 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.pipeline.pipeline_data_sys.PipelineDataSysApplicationTests], using SpringBootContextLoader
+2022-09-27 11:59:25.583  INFO 62796 --- [main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.pipeline.pipeline_data_sys.PipelineDataSysApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-09-27 11:59:25.585  INFO 62796 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.pipeline.pipeline_data_sys.PipelineDataSysApplicationTests]: PipelineDataSysApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-09-27 11:59:25.608  INFO 62796 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.pipeline.pipeline_data_sys.PipelineDataSysApplication for test class com.pipeline.pipeline_data_sys.PipelineDataSysApplicationTests
+2022-09-27 11:59:25.622  INFO 62796 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2022-09-27 11:59:25.624  INFO 62796 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7fb44737, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@11295cb1, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@5daad59a, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5256fbc, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@58f50dd0, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3620eab, org.springframework.test.context.transaction.TransactionalTestExecutionListener@8ef1d58, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@2619cb76, org.springframework.test.context.event.EventPublishingTestExecutionListener@56f2c9e8, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@457692cb, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@350342e0, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5d297d4d, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@1dd44289, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6cc56b32, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@43fe2008]
+2022-09-27 11:59:25.772  INFO 62796 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.pipeline.pipeline_data_sys.CategoryExcelTests], using SpringBootContextLoader
+2022-09-27 11:59:25.773  INFO 62796 --- [main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.pipeline.pipeline_data_sys.CategoryExcelTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-09-27 11:59:25.774  INFO 62796 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.pipeline.pipeline_data_sys.CategoryExcelTests]: CategoryExcelTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-09-27 11:59:25.775  INFO 62796 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.pipeline.pipeline_data_sys.PipelineDataSysApplication for test class com.pipeline.pipeline_data_sys.CategoryExcelTests
+2022-09-27 11:59:25.780  INFO 62796 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2022-09-27 11:59:25.784  INFO 62796 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@526893f, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3de45b6c, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@37caecda, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@7be7c052, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@4ab9d160, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5599dc60, org.springframework.test.context.transaction.TransactionalTestExecutionListener@35554635, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@70f5f59d, org.springframework.test.context.event.EventPublishingTestExecutionListener@74431832, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6fa2a006, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@70592729, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@2fdf7da2, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@43b172e3, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@39695803, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@304068]
+2022-09-27 11:59:26.118  INFO 62796 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.pipeline.pipeline_data_sys.CategoryTests], using SpringBootContextLoader
+2022-09-27 11:59:26.119  INFO 62796 --- [main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.pipeline.pipeline_data_sys.CategoryTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-09-27 11:59:26.119  INFO 62796 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.pipeline.pipeline_data_sys.CategoryTests]: CategoryTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-09-27 11:59:26.122  INFO 62796 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.pipeline.pipeline_data_sys.PipelineDataSysApplication for test class com.pipeline.pipeline_data_sys.CategoryTests
+2022-09-27 11:59:26.125  INFO 62796 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2022-09-27 11:59:26.126  INFO 62796 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4b61e97, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@11d1735e, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@31082efa, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@4ca5cb99, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@7853363c, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6282f1eb, org.springframework.test.context.transaction.TransactionalTestExecutionListener@120d6cbf, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@70169464, org.springframework.test.context.event.EventPublishingTestExecutionListener@1115be8c, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@64ed18ec, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@1dfcf85a, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@590dea35, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6550ce46, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@69f69078, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@13b29b34]
+2022-09-27 11:59:26.279  INFO 62796 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-09-27 11:59:26.305  INFO 62796 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

@@ -2,7 +2,7 @@ package com.pipeline.pipeline_data_sys.pojo.vo;
 
 import com.alibaba.fastjson.JSON;
 
-import static com.pipeline.pipeline_data_sys.ErrorCode.SUCCESS;
+import static com.pipeline.pipeline_data_sys.errorcode.ErrorCode.SUCCESS;
 
 /**
  * @author ：zsy

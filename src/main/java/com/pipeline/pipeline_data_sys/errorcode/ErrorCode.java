@@ -1,4 +1,4 @@
-package com.pipeline.pipeline_data_sys;
+package com.pipeline.pipeline_data_sys.errorcode;
 
 import java.util.HashMap;
 
@@ -25,7 +25,7 @@ public class ErrorCode {
 
     // 图片操作
     public static int ERROR_FILE_FORMAT = 5000;
-    public static int ERROR_IMAGE_SAVE_FAIL = 5001;
+    public static int ERROR_File_SAVE_FAIL = 5001;
 
     public static int ERROR_UNKNOWN = 6000;
 
@@ -41,7 +41,7 @@ public class ErrorCode {
         map.put(ERROR_NO_LOGIN, "当前状态：未登录");
         map.put(ERROR_ILLEGAL_PARAMS, "非法参数");
         map.put(ERROR_FILE_FORMAT, "文件格式不正确");
-        map.put(ERROR_IMAGE_SAVE_FAIL, "保存图片失败");
+        map.put(ERROR_File_SAVE_FAIL, "保存文件失败");
     }
 
     public static String getMsg(int code) {

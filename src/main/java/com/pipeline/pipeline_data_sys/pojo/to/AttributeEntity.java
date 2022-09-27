@@ -33,4 +33,10 @@ public class AttributeEntity {
 
     @ExcelProperty(index = 6)
     private String tabName;
+
+    @ExcelProperty(index = 7)
+    private String referenceVariable;
+
+    @ExcelProperty(index = 8)
+    private String typeCode;
 }

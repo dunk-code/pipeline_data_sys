@@ -3,9 +3,7 @@ package com.pipeline.pipeline_data_sys.controller;
 
 import com.alibaba.excel.EasyExcel;
 import com.pipeline.pipeline_data_sys.listen.AttributeListen;
-import com.pipeline.pipeline_data_sys.listen.CategoryListen;
 import com.pipeline.pipeline_data_sys.pojo.to.AttributeEntity;
-import com.pipeline.pipeline_data_sys.pojo.to.CategoryEntity;
 import com.pipeline.pipeline_data_sys.pojo.vo.AttributeColVo;
 import com.pipeline.pipeline_data_sys.pojo.vo.AttributeVo;
 import com.pipeline.pipeline_data_sys.pojo.vo.RespVo;
@@ -13,19 +11,17 @@ import com.pipeline.pipeline_data_sys.service.AttributeService;
 import com.pipeline.pipeline_data_sys.service.CategoryService;
 import com.pipeline.pipeline_data_sys.util.FileUtil;
 import io.swagger.annotations.ApiOperation;
-import io.swagger.models.auth.In;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
-import javax.xml.stream.events.Attribute;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import static com.pipeline.pipeline_data_sys.ErrorCode.*;
+import static com.pipeline.pipeline_data_sys.errorcode.ErrorCode.*;
 
 /**
  * <p>
@@ -51,6 +47,8 @@ public class AttributeController {
         colMap.put("range_constraint", "值域/约束");
         // colMap.put("类别编号", "category_identifier");
         // colMap.put("类别名", "category_title");
+        colMap.put("reference_variable", "引用变量");
+        colMap.put("type_code", "类别码");
     }
 
     @Autowired
@@ -109,7 +107,7 @@ public class AttributeController {
             EasyExcel.read(f, AttributeEntity.class, new AttributeListen(attributeService, categoryService)).sheet().doRead();
         } catch (Exception e) {
             e.printStackTrace();
-            return RespVo.error(ERROR_IMAGE_SAVE_FAIL, getMsg(ERROR_IMAGE_SAVE_FAIL));
+            return RespVo.error(ERROR_File_SAVE_FAIL, getMsg(ERROR_File_SAVE_FAIL));
         }
         System.out.println(file.getOriginalFilename());
         return RespVo.ok(file.getOriginalFilename());

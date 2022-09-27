@@ -3,26 +3,20 @@ package com.pipeline.pipeline_data_sys.controller;
 
 import com.alibaba.excel.EasyExcel;
 import com.pipeline.pipeline_data_sys.listen.CategoryListen;
-import com.pipeline.pipeline_data_sys.pojo.Category;
 import com.pipeline.pipeline_data_sys.pojo.to.CategoryEntity;
 import com.pipeline.pipeline_data_sys.pojo.vo.CategoryVo;
 import com.pipeline.pipeline_data_sys.pojo.vo.RespVo;
 import com.pipeline.pipeline_data_sys.service.CategoryService;
 import com.pipeline.pipeline_data_sys.util.FileUtil;
-import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.File;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
-import static com.pipeline.pipeline_data_sys.ErrorCode.*;
+import static com.pipeline.pipeline_data_sys.errorcode.ErrorCode.*;
 
 /**
  * <p>
@@ -63,7 +57,7 @@ public class CategoryController {
             EasyExcel.read(f, CategoryEntity.class, new CategoryListen(categoryService)).sheet().doRead();
         } catch (Exception e) {
             e.printStackTrace();
-            return RespVo.error(ERROR_IMAGE_SAVE_FAIL, getMsg(ERROR_IMAGE_SAVE_FAIL));
+            return RespVo.error(ERROR_File_SAVE_FAIL, getMsg(ERROR_File_SAVE_FAIL));
         }
         System.out.println(file.getOriginalFilename());
         return RespVo.ok(file.getOriginalFilename());
