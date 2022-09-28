@@ -77,6 +77,17 @@ public class AttributeServiceImpl extends ServiceImpl<AttributeMapper, Attribute
         return new AttributeVo(attributes, "", "", null, null);
     }
 
+    @Override
+    public boolean removeByIdOrAll(Integer id) {
+        QueryWrapper<Attribute> wrapper = new QueryWrapper<>();
+        if (id == null) {
+            wrapper.ge("id", 0);
+        } else {
+            wrapper.eq("id", id);
+        }
+        return this.remove(wrapper);
+    }
+
     private List<AttributeVo> sortOut(List<Attribute> attributes, long pages, long total) {
         List<Integer> categoryIdList = new ArrayList<>();
         Map<Integer, AttributeVo> categoryId2AttributeVoMap = new HashMap<>();

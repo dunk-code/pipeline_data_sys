@@ -65,7 +65,7 @@ public class CategoryServiceImpl extends ServiceImpl<CategoryMapper, Category> i
     }
 
     @Override
-    public List<String> searchByIdentifier(String title) {
+    public List<String> searchByTitle(String title) {
         List<String> ans = new ArrayList<>();
         if (title == null || title.equals("")) return ans;
         List<Category> categories = this.list();

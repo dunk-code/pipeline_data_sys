@@ -43,7 +43,7 @@ public class CategoryController {
     @GetMapping("/{title}/search")
     @ApiOperation("类别搜索接口")
     public List<String> search(@PathVariable String title) {
-        return categoryService.searchByIdentifier(title);
+        return categoryService.searchByTitle(title);
     }
 
 

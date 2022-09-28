@@ -52,12 +52,21 @@ public class CategoryListen implements ReadListener<CategoryEntity> {
         Category category = convert(categoryEntity);
         if (category != null) {
             String identifier = category.getIdentifier();
-            boolean success = categoryService.save(category);
+            boolean success;
+            if (identifier2IdMap.containsKey(identifier)) { // 重复的编号，修改数据
+                Integer categoryId = identifier2IdMap.get(identifier);
+                category.setId(categoryId);
+                success = categoryService.updateById(category);
+            } else { // 创建数据
+                success = categoryService.save(category);
+            }
             if (!success) {
                 throw new RuntimeException("save Category error");
             } else {
-                Category searchCategory = categoryService.getOne(new QueryWrapper<Category>().eq("identifier", identifier));
-                identifier2IdMap.put(searchCategory.getIdentifier(), searchCategory.getId());
+                if (!identifier2IdMap.containsKey(identifier)) {
+                    Category searchCategory = categoryService.getOne(new QueryWrapper<Category>().eq("identifier", identifier));
+                    identifier2IdMap.put(searchCategory.getIdentifier(), searchCategory.getId());
+                }
             }
         }
 

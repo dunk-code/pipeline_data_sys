@@ -2,7 +2,9 @@ package com.pipeline.pipeline_data_sys.controller;
 
 
 import com.alibaba.excel.EasyExcel;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.pipeline.pipeline_data_sys.listen.AttributeListen;
+import com.pipeline.pipeline_data_sys.pojo.Attribute;
 import com.pipeline.pipeline_data_sys.pojo.to.AttributeEntity;
 import com.pipeline.pipeline_data_sys.pojo.vo.AttributeColVo;
 import com.pipeline.pipeline_data_sys.pojo.vo.AttributeVo;
@@ -105,8 +107,16 @@ public class AttributeController {
         return attributeService.searchByCol(colName, colValue, pageNum, pageSize, order);
     }
 
+    @DeleteMapping("/delete")
+    @ApiOperation("删除接口")
+    @ResponseBody
+    public RespVo deleteByIdOrAll(@RequestParam(defaultValue = "") Integer id) {
+        boolean success = attributeService.removeByIdOrAll(id);
+        return success ? RespVo.ok() : RespVo.error(ERROR_DB_UNKNOWN, getMsg(ERROR_DB_UNKNOWN));
+    }
+
     @PostMapping("/upload")
-    @ApiOperation("上传属性表接口")
+    @ApiOperation("上传属性表接口(如果无法保证excel中都是最新数据，需要先调用delete接口删除所有数据，并且全量导入)")
     public RespVo upload(@RequestParam(name = "image") MultipartFile file) {
         if (!FileUtil.isCorrectForExcel(file.getOriginalFilename())) {
             return RespVo.error(ERROR_FILE_FORMAT, getMsg(ERROR_FILE_FORMAT));

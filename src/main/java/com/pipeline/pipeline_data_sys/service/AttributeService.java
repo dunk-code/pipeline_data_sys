@@ -21,4 +21,6 @@ public interface AttributeService extends IService<Attribute> {
     List<AttributeVo> searchByCol(String colName, String colValue, Integer pageNum, Integer pageSize, String order);
 
     AttributeVo listByCategoryId(Integer categoryId, String order);
+
+    boolean removeByIdOrAll(Integer id);
 }
