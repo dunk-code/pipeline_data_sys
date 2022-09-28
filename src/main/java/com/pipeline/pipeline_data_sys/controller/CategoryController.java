@@ -47,7 +47,7 @@ public class CategoryController {
     }
 
 
-    @PostMapping("/upload")
+    @PostMapping("/import")
     @ApiOperation("上传类型表接口")
     public RespVo upload(@RequestParam(name = "image") MultipartFile file) {
         if (!FileUtil.isCorrectForExcel(file.getOriginalFilename())) {

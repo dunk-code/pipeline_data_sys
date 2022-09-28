@@ -115,7 +115,7 @@ public class AttributeController {
         return success ? RespVo.ok() : RespVo.error(ERROR_DB_UNKNOWN, getMsg(ERROR_DB_UNKNOWN));
     }
 
-    @PostMapping("/upload")
+    @PostMapping("/import")
     @ApiOperation("上传属性表接口(如果无法保证excel中都是最新数据，需要先调用delete接口删除所有数据，并且全量导入)")
     public RespVo upload(@RequestParam(name = "image") MultipartFile file) {
         if (!FileUtil.isCorrectForExcel(file.getOriginalFilename())) {
