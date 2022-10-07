@@ -32,7 +32,7 @@ public class AttributeExcelTests {
         String fileName = System.getProperty("user.dir") + File.separator + "excel" +
                 File.separator + "demo1.xlsx";
         File file = new File(fileName);
-        EasyExcel.read(file, AttributeEntity.class, new
-                AttributeListen(attributeService, categoryService)).sheet().doRead();
+        /*EasyExcel.read(file, AttributeEntity.class, new
+                AttributeListen(attributeService, categoryService)).sheet().doRead();*/
     }
 }

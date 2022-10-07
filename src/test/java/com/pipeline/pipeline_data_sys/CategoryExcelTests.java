@@ -61,6 +61,6 @@ public class CategoryExcelTests {
     void testMyListen() {
         String fileName = System.getProperty("user.dir") + File.separator + "excel" + File.separator + "demo.xlsx";
         File file = new File(fileName);
-        EasyExcel.read(file, CategoryEntity.class, new CategoryListen(categoryService)).sheet().doRead();
+        /*EasyExcel.read(file, CategoryEntity.class, new CategoryListen(categoryService)).sheet().doRead();*/
     }
 }

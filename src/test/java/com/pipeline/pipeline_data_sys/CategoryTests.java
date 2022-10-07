@@ -64,6 +64,6 @@ public class CategoryTests {
 
     @Test
     void testSearchByIdentifier() {
-        System.out.println(categoryService.searchByIdentifier("G010699"));
+        System.out.println(categoryService.searchByTitle("G010699"));
     }
 }
